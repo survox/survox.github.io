@@ -1,10 +1,10 @@
 ---
 layout: post
-title: You're up and running!
+title: The first test post
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+Ok, if yout got here, you've arrived a bit early. We're in the process of setting up our little developer community and we hope to have some interesting things for you to check out in the next few weeks. Thanks for stopping by, check back in sometime next week. 
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+Survox DevOps
 
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+![_config.yml]({{ site.baseurl }}/images/survox-clear-logo.png)
