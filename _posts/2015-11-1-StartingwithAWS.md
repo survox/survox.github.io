@@ -33,13 +33,13 @@ Once these tools are both installed you’re ready to move forward
 
 This gets a little odd depending how you install the OVF tool and how you name your VM. First thing to realize, when you see a file named somefile.vmwarevm this is actually a directory not a file (the OS makes it look like a file in some cases.) So you end up with a fairly long command to reference the files you need correctly. 
 
-{% highlight linos %}
+{% highlight bash %}
 ovftool "/users/usname/Documents/Virtual Machines.localized/CentOS 64-bit.vmwarevm/CentOS 64-bit.vmx" "/users/usname/VMs/devops-cos66.ovf"
 {% endhighlight %}
 
 Now that you have the OVF file you can upload the image to Amazon using the cli tools. The '-o' option is used for your access key ID. If AWS_ACCESS_KEY isn't set, you must specify this option. The '-w' option is used for your secret access key. Default: The value of the AWS_SECRET_KEY environment variable. If AWS_SECRET_KEY isn't set, you must specify this option.
 
-{% highlight linos %}
+{% highlight bash %}
 ec2-import-instance /users/usname/VMs/devops-cos66-disk1.vmdk -f vmdk -a x86_64 -t t2.small -b devops-base-images -o AAAAAAAA -w SSSSSSSSS -region us-west-2 -p Linux
 {% highlight %}
 
@@ -47,7 +47,7 @@ It's worth noting that many of the command line options can be set as environmen
 
 The ec2-import-instance command will copy the VM to the S3 bucket you specified. Once completed, you can check on the task by using ec2-describe-conversion-tasks with the task ID provided by the ec2-iport-instance command. 
 
-{% highlight linos %}
+{% highlight bash %}
 ec2-describe-conversion-tasks import-i-fh3vidy9
 {% highlight %}
 
