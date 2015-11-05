@@ -41,7 +41,7 @@ Now that you have the OVF file you can upload the image to Amazon using the cli 
 
 {% highlight bash %}
 ec2-import-instance /users/usname/VMs/devops-cos66-disk1.vmdk -f vmdk -a x86_64 -t t2.small -b devops-base-images -o AAAAAAAA -w SSSSSSSSS -region us-west-2 -p Linux
-{% highlight %}
+{% endhighlight %}
 
 It's worth noting that many of the command line options can be set as environment variables if you’re going to be doing this frequently. If you're interested in trying to set the environment variables as opposed to using the command line switches, you can find information about doing so here: [AWS CLI Environment Variables](http://) 
 
@@ -49,7 +49,7 @@ The ec2-import-instance command will copy the VM to the S3 bucket you specified.
 
 {% highlight bash %}
 ec2-describe-conversion-tasks import-i-fh3vidy9
-{% highlight %}
+{% endhighlight %}
 
 Once the process finishes, go ahead and log into the instance. You'll want to make sure you've updated the security group to limit access to the system. If everything looks ok, go the the AWS EC2 console and select the instance you created. From the 'Actions' button, select 'Image', 'Create Image' and follow the on screen prompts. Once the process completes, you should have a new AMI you can re-use. 
 
