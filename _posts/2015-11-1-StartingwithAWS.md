@@ -26,7 +26,7 @@ There are several options, but we’re going to create our AMI from a virtual ma
 You’re going to want a VM that contains the operating system you intended to use (since we’re going to install the 8.8.6 version of the software, you’ll want to install RedHat 6.6or CentOS 6.6). You’ll also want follow whatever company practices you have for 'hardening' the security of a server (disable root access, )
 
 You’ll need to install a few tools on your local system:
-The AWS command line interface (CLI) tools. You can find the instuctions here: [AWS Command Line Tools](http://) 
+The AWS command line interface (CLI) tools. You can find the instuctions here: [AWS Command Line Tools](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) 
 The  Open Virtualization Format (OVF) Tool. You can download the tool and find the documentation here. [Ovs Tool](http://) 
 
 Once these tools are both installed you’re ready to move forward 
