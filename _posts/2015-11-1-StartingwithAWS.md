@@ -10,24 +10,24 @@ Enough pre-amble, we're going to talk a little about Amazon Web Services (AWS) i
 Our first goal was working out how we could get the Survox platform running 'in the cloud.' To do this, we started working with the AWS service known as Elastic Compute Cloud (EC2). EC2 is the service AWS offers for quickly obtaining and configuring servers in the cloud. We would recommend you take a quick look at this page: [AWS Docs - Launching an Instance](https://aws.amazon.com/ec2/getting-started/)  there are lots of quick-starts and tutorials you can find there. AWS also offers a free tier for the first 12 months, check out the following link: [AWS Free Usage Information](http://aws.amazon.com/free/) - this is a great way to try out many of Amazon's services.
 
 ###Some key concepts
-- Amazon Machine Image (AMI -pronounced ahh-me) is the base image you’ll use to create your server. Whatever is on your AMI when you created it, will be available on each instance you create from that AMI. 
-- Instance - This is a server that you have provisioned based on an AMI. 
-- Instance State - An instance state determines whether the server is running, stopped, rebooting, or being retired. 
+- ***Amazon Machine Image (AMI -pronounced ahh-me)*** - is the base image you’ll use to create your server. Whatever is on your AMI when you created it, will be available on each instance you create from that AMI. 
+- ***Instance*** - This is a server that you have provisioned based on an AMI. 
+- ***Instance State*** - An instance state determines whether the server is running, stopped, rebooting, or being retired. 
 Virtual Private Cloud (VPC) - This is a virtual network you can create and configure. This is where you’ll launch AWS resources and control whether your resources can access the internet or not. 
-- Security Group - This is a critical concept to make certain you pay attention to. Think of a security group as a firewall for your server. The security group determine what traffic is allowed to access your server. The default security group created for an instance is open to all, so you’ll want to be careful and make sure you take some time to configure a more restrictive security group. 
-- Private & public IP addresses - You’ll always get a private IP address for each instance you create. A private address is not accessible over the internet and is only reachable over the same network. You can find out more about networks here: https://aws.amazon.com/vpc/ 
-- Availability Zone - This is where you’ll spin up your instance. Amazon has many availability zones available for you to use. This 
-- Tags - 
+- ***Security Group*** - This is a critical concept to make certain you pay attention to. Think of a security group as a firewall for your server. The security group determine what traffic is allowed to access your server. The default security group created for an instance is open to all, so you’ll want to be careful and make sure you take some time to configure a more restrictive security group. 
+- ***Private & public IP addresses*** - You’ll always get a private IP address for each instance you create. A private address is not accessible over the internet and is only reachable over the same network. You can find out more about networks here: [AWS VPC](https://aws.amazon.com/vpc/)
+- ***Availability Zone*** - This is where you’ll spin up your instance. Amazon has many availability zones available for you to use. This 
+- ***Tags***s - These are user defineable tags that can be assigned to many AWS resources. They are very useful once you've started building up multiple instances and you're trying to figure out what everything is being used for. We'd recomend thinking about a standard tagging scheme that makes sense for your needs and using it from day 1. 
 
 So, let's try getting an instance spun up and install the Survox platform on it. You remember how we mentioned that you don't want t use the default Amazon images (there issn’t a 6.6 version of either Redhat or CentOS available at the time we’re writing this), so what should you do? 
 
-There are several options, but we’re going to create our AMI from a virtual machine (VM) that we created using VMWare fusion. If you’re reading this, you probably already know a bunch about creating a virtual machine. However, if you’re looking for more information, you can find it here [Creating a VM](http://)
+There are several options, but we’re going to create our AMI from a virtual machine (VM) that we created using VMWare fusion. If you’re reading this, you probably already know a bunch about creating a virtual machine. However, if you’re looking for more information, you can find it here [VMWare Education](http://mylearn.vmware.com/mgrreg/index.cfm)
 
 You’re going to want a VM that contains the operating system you intended to use (since we’re going to install the 8.8.6 version of the software, you’ll want to install RedHat 6.6or CentOS 6.6). You’ll also want follow whatever company practices you have for 'hardening' the security of a server (disable root access, )
 
 You’ll need to install a few tools on your local system:
 The AWS command line interface (CLI) tools. You can find the instuctions here: [AWS Command Line Tools](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) 
-The  Open Virtualization Format (OVF) Tool. You can download the tool and find the documentation here. [Ovs Tool](http://) 
+The  Open Virtualization Format (OVF) Tool. You can download the tool and find the documentation here. [Ovf Tool](https://www.vmware.com/support/developer/ovf/) 
 
 Once these tools are both installed you’re ready to move forward 
 
