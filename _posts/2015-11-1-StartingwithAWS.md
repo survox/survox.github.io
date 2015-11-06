@@ -3,9 +3,9 @@ layout: post
 title: Getting Started with AWS and the Survox Platform
 ---
 
-
-
-<img align="right" src=({{ site.url }}/images/srvx-aws.png) />
+<div style="float: right">
+![Logos]{{ site.url }}/images/srvx-aws.png)
+</div>
 
 Ok, we made it back from another successful users' summit. It was a great opportunity to meet with many of our users and share what we've been up to over the past year. One of the topics that generated quite a bit of interest was the talk given by Ken Keyes on our use of a variety cloud based services and automation tools. We spoke with several users after the presentation and there were many questions about how to get started investigating this on their own. So, we decided to start sharing what we've learned with out development community by posting to this site. We hope you find it useful in your own exploration of the various technologies available to assist you in building a world class data collection and analysis platform. 
 
