@@ -42,7 +42,7 @@ This gets a little odd depending how you install the OVF tool and how you name y
 ovftool "/users/usname/Documents/Virtual Machines.localized/CentOS 64-bit.vmwarevm/CentOS 64-bit.vmx" "/users/usname/VMs/devops-cos66.ovf"
 {% endhighlight %}
 
-Now that you have the OVF file you can upload the image to Amazon using the cli tools. In order to use the CLI tools, you'll need your AWS access and secret keys. You can learn more about these keys and were to obtain them here: [AWS Access & Secret Keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) The '-o' option is used for your access key ID. If AWS_ACCESS_KEY isn't set, you must specify this option. The '-w' option is used for your secret access key. Default: The value of the AWS_SECRET_KEY environment variable. If AWS_SECRET_KEY isn't set, you must specify this option.
+Now that you have the OVF file you can upload the image to Amazon using the cli tools. In order to use the CLI tools, you'll need your AWS access and secret keys. You can learn more about these keys and where to obtain them here: [AWS Access & Secret Keys](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html) The '-o' option is used for your access key ID. If AWS_ACCESS_KEY isn't set, you must specify this option. The '-w' option is used for your secret access key. Default: The value of the AWS_SECRET_KEY environment variable. If AWS_SECRET_KEY isn't set, you must specify this option.
 
 {% highlight bash %}
 ec2-import-instance /users/usname/VMs/devops-cos66-disk1.vmdk -f vmdk -a x86_64 -t t2.small -b devops-base-images -o AAAAAAAA -w SSSSSSSSS -region us-west-2 -p Linux
