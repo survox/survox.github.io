@@ -23,11 +23,11 @@ footer-links:
   flickr:
   github:
   instagram:
-  linkedin: Survox Users Group
+  linkedin: company/survox
   pinterest:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: https://twitter.com/Survox
-  stackoverflow: http://careers.stackoverflow.com/company/survox-inc
+  twitter: Survox
+  stackoverflow: company/survox-inc
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
