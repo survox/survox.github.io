@@ -3,6 +3,10 @@ layout: post
 title: Getting Started with AWS and the Survox Platform
 ---
 
+
+
+<img align="right" src=({{ site.url }}/images/srvx-aws.png) />
+
 Ok, we made it back from another successful users' summit. It was a great opportunity to meet with many of our users and share what we've been up to over the past year. One of the topics that generated quite a bit of interest was the talk given by Ken Keyes on our use of a variety cloud based services and automation tools. We spoke with several users after the presentation and there were many questions about how to get started investigating this on their own. So, we decided to start sharing what we've learned with out development community by posting to this site. We hope you find it useful in your own exploration of the various technologies available to assist you in building a world class data collection and analysis platform. 
 
 Enough pre-amble, we're going to talk a little about Amazon Web Services (AWS) in this post. AWS is one of many providers of 'on-demand' programable infrastructure. We selected AWS based largely on the breadth of services they offer, the amount of time they've been in the space, and the availability of user facing interfaces for their services. There are many other great providers out there but many of them relied more heavily on programming interfaces for almost all operations and the ability to interact with the services through a user interface was high on our list. 
@@ -61,7 +65,7 @@ Look at that - you have your first machine in the cloud, congratulations!
 
 Now you're ready to install the survox platform. This is really no different than installing on any other server. You can find the steps for installing the software right here: [Installing the Survox Platform](http://docs.survoxinc.com/v88/installation/installation/)
 
-At his point you should be able to access your new Survox Console by using 
+At his point you should be able to access your new Survox Console by entering the public DNS provided by AWS into the browser followed by 'survoxconsole' (ex: http://<Public DNS>/survoxconsole)
 
 You now have a study server and survox console up and running and ready to start deploying surveys for you. A couple of important things to remeber: 
 
@@ -72,5 +76,5 @@ You now have a study server and survox console up and running and ready to start
 
 If you think you'll need a greater level of persistance with your IP address or MAC addres, you might want to take a look at the following article [Elastic Network Interfaces](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 
-Ok, that's all for our first article on AWS. This obviously only scratches the surface of what you can do with EC2, but hopefully gives you a place to start. We'll be posting more here in the weeks and months that follow, so keep checking back. If you have some suggestions of articles you might like to see, feel free to shoot us an email at [devops-ideas@survoxinc.com](devops-ideas@survoxinc.com)
+Ok, that's all for our first article on AWS. This obviously only scratches the surface of what you can do with EC2, but hopefully gives you a place to start. We'll be posting more here in the weeks and months that follow, so keep checking back. If you have some suggestions of articles you might like to see, feel free to shoot us an email at [devops-ideas@survoxinc.com](mailto:devops-ideas@survoxinc.com)
 
