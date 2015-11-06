@@ -65,8 +65,12 @@ At his point you should be able to access your new Survox Console by using
 
 You now have a study server and survox console up and running and ready to start deploying surveys for you. A couple of important things to remeber: 
 
-1 - If you stop and then start an instance your internal and external IP address will change (Although they 'could' stay the same, AWS does not guarentee it.) This means you would need to reconfigure your console to use a new IP address. 
-2 - If yout stop your instance and then restart your instance, the MAC address WILL change and you'll need a new validation set from Survox. 
-3- If you reboot your instance, your MAC address and IP addresses will remain unchanged. 
+1. If you stop and then start an instance your internal and external IP address will change (Although they 'could' stay the same, AWS does not guarentee it.) This means you would need to reconfigure your console to use a new IP address. 
+2. If yout stop your instance and then restart your instance, the MAC address WILL change and you'll need a new validation set from Survox. 
+3. If you reboot your instance, your MAC address and IP addresses will remain unchanged. 
+4. If you stop and then restart your instance, any data you have in ephemeral storage is gone. Use EBS storage, rather than instance storage for data you intended to persist between stop and start operations. 
 
+If you think you'll need a greater level of persistance with your IP address or MAC addres, you might want to take a look at the following article [Elastic Network Interfaces](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
+
+Ok, that's all for our first article on AWS. This obviously only scratches the surface of what you can do with EC2, but hopefully gives you a place to start. We'll be posting more here in the weeks and months that follow, so keep checking back. If you have some suggestions of articles you might like to see, feel free to shoot us an email at [devops-ideas@survoxinc.com](devops-ideas@survoxinc.com)
 
