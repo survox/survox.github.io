@@ -9,7 +9,7 @@ Twilio lookup provides several useful pieces of information, but given growing e
 
 We wrote a very simple script to demonstrate how to use this function that you can modify to fit your particular workflow. 
 
-To get started, you’ll need a Twilio account and an associated Account SID and Authorization token. To find you credentials, follow the following information provided by Twilio, First log into your [Twilio Account](https://www.twilio.com/user/account). On the Dashboard there is a section labeled [API Credentials](https://www.twilio.com/user/account/settings#api-credentials). There you will find your Account SID and Auth Token. You'll need these to authenticate your request.”
+To get started, you’ll need a Twilio account and an associated Account SID and Authorization token. To find your credentials, follow the following information provided by Twilio, First log into your [Twilio Account](https://www.twilio.com/user/account). On the Dashboard there is a section labeled [API Credentials](https://www.twilio.com/user/account/settings#api-credentials). There you will find your Account SID and Auth Token. You'll need these to authenticate your request.”
 
 Once your account is established and you have your credentials, you can got take a look here (add link) for a simple example on how to read a CSV file, call the lookup service, and report back the type of phone number for each record. Remember, there is a $0.005 charge for each number you lookup that will be billed to your Twilio account. 
 
