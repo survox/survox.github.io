@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using the Twilio lookup service to scrub your sample
+title: Using the Twilio Lookup service to scrub your sample
 ---
 
 As many of you know the Survox team has been working with the folks over at Twilio on our upcoming IVR service and to look at opportunities to configure our dialer to use their elastic SIP trunking service. In our investigations, we encountered a great service for checking phone number details called [Twilio Lookup.](https://www.twilio.com/lookup) 
