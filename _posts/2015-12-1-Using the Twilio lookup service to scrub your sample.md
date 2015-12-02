@@ -14,3 +14,5 @@ To get started, you’ll need a Twilio account and an associated Account SID and
 Once your account is established and you have your credentials, you can got take a look here (add link) for a simple example on how to read a CSV file, call the lookup service, and report back the type of phone number for each record. Remember, there is a $0.005 charge for each number you lookup that will be billed to your Twilio account. 
 
 This particular example demonstrates the use of this service to ‘pre-process’ all the records. However, this could easily be implemented to make the call to the Twilio service prior dialing, or at any point that makes sense for your particular workflow.
+
+You can find the sample script on [github](https://github.com/survox/sampleScrub)
